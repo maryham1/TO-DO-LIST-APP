@@ -17,7 +17,7 @@ section1.append(onGoingActivity);
 
 // const allActivity = document.querySelector('.all')
 // const leftItems = document.querySelector('.left')
-const maxNumber = 5
+const maxNumber = 20
 let allCount = 0
 
 inputTodo.addEventListener('keydown',function(e){
