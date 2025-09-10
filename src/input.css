@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@layer components{
+    body{
+        @apply flex flex-col justify-center items-center min-h-screen max-w-full p-[20px] gap-[30px] 
+    }
+    body h1{
+    @apply font-bold text-2xl text-orange-200 text-left
+}
+.section--1{
+    @apply flex gap-[10px] flex-col bg-orange-500/50 p-[20px] rounded-lg
+}
+
+.to-do-ul{
+    @apply flex flex-col p-[0]
+}
+.li-item{
+    @apply flex list-none p-[10px] gap-[10px] border-0 border-b-orange-300 border-b-[1px]
+}
+.li-item span{
+    @apply flex-1 text-orange-300 font-mono capitalize
+    
+}
+.li-item input[type ="checkbox"]{
+    @apply appearance-none w-[20px] h-[20px] border-2 border-orange-500 rounded-full shadow-md
+}
+.li-item input[type ="checkbox"]:checked{
+    @apply  bg-orange-700
+}
+.li-item i{
+    @apply  text-orange-300 
+}
+.removed-button{
+    @apply bg-transparent border-0 rounded-[none]
+    
+}
+.inputTodo{
+    @apply bg-transparent p-[10px] rounded-lg outline-0 border-orange-700 border-2 text-orange-200 font-mono shadow-lg
+}
+.inputTodo::placeholder{
+    @apply text-orange-200
+}
+.onGoing-activity{
+    @apply flex justify-between
+    
+}
+img{
+    @apply w-[400px] h-[400px] max-w-full
+    
+}
+.todo_image{
+    @apply block
+}
+div p{
+    @apply text-orange-300
+}
+.prepend-message{
+    @apply bg-orange-700/50 p-[20px] font-[15px] rounded-lg  text-orange-300 shadow-md capitalize
+}
+.prepend-message .okay{
+    @apply bg-orange-300 p-[2px] text-center font-mono rounded-lg text-orange-700 font-bold w-[70px] ml-[20px]
+}
+
+
+ @media (min-width: 640px){
+     body h1{
+    @apply text-center
+}
+ }
+ @media (min-width: 1024px){
+     body h1{
+    @apply text-center
+}
+
+ }
+}
